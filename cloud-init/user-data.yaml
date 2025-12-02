@@ -1,0 +1,6 @@
+#cloud-config
+runcmd:
+  - mkdir -p /mnt/onixauto
+  - git clone https://github.com/imwcbb-spec/onixauto /mnt/onixauto
+  - chmod +x /mnt/onixauto/scripts/bootstrap.sh
+  - /mnt/onixauto/scripts/bootstrap.sh
